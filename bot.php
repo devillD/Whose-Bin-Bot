@@ -48,6 +48,7 @@ $callback_query = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $reply = $update->message->reply_to_message->message_id;
   $date = date("d/m/y");
+$GLOBALS["TG_BOT_TOKEN"] = getenv("TG_BOT_TOKEN");
 $AdminID = 1222113933; //admin user id get it from @MissRose_bot 
  $logchnl = -1001282868218;
 if($text == '/start')
