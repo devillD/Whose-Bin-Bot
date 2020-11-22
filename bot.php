@@ -1,5 +1,4 @@
 <?php
-require_one = ".env";
 /*
 BY:- @BenchamXD
 
