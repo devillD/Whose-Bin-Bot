@@ -4,3 +4,8 @@
   "repository": "https://github.com/Benchamxd/Bin-Checker",
   "keywords": ["PHP", "Telegram", "bin", "Bot"]
 }
+"env": {
+        "BOT_TOKEN": {
+            "description": "your Telegram Bot Token, from @BotFather"
+        },
+}
