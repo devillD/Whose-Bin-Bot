@@ -8,7 +8,7 @@
 
 **THEN DEPLOY YOUR REPO BY** ``https://heroku.com/deploy?template=<ur git link>``
 
-``AFTER DEPLOY SET WEBHOOK BY api.telegram.org/bot<ur bot token>/setwebhook?url=<ur heroku link>/bot.php``
+**AFTER DEPLOY SET WEBHOOK BY** ``api.telegram.org/bot<ur bot token>/setwebhook?url=<ur heroku link>/bot.php``
 
 **AFTER THIS REMOVE YOUR BOT TOKEN FROM THE REPO FOR YOUR SAFTEY**
 
