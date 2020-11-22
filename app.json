@@ -1,6 +1,13 @@
 {
-  "name": "Bin-Checker",
-  "description": "A simple PHP powered Telegram Bot.",
-  "repository": "https://github.com/Benchamxd/Bin-Checker",
-  "keywords": ["PHP", "Telegram", "bot"]
+    "name": "Files Bot",
+    "description": "this app does one little thing, and does it well.",
+    "keywords": [
+        "productivity",
+        "share",
+        "files"
+    ],
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "your Telegram Bot Token, from @BotFather"
+        },
 }
