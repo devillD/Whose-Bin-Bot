@@ -1,0 +1,6 @@
+{
+  "name": "BIN-CHECKER-BOT",
+  "description": "A PHP Telegram bot that can check the bin is valid or not",
+  "repository": "https://github.com/Benchamxd/Bin-Checker",
+  "keywords": ["PHP", "Telegram", "bin", "Bot"]
+}
