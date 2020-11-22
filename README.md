@@ -6,7 +6,7 @@
 
 ``ADD YOU BOT TOKEN IN LINE 12``
 
-``THEN DEPLOY YOUR REPO BY https://heroku.com/deploy?template=<ur git link>``
+**THEN DEPLOY YOUR REPO BY** ``https://heroku.com/deploy?template=<ur git link>``
 
 ``AFTER DEPLOY SET WEBHOOK BY api.telegram.org/bot<ur bot token>/setwebhook?url=<ur heroku link>/bot.php``
 
