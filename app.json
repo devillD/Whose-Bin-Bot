@@ -1,22 +1,6 @@
 {
-    "name": "Bin-Checker Bot",
-    "description": "this app does one little thing, and does it well.",
-    "keywords": [
-        "Bin",
-        "Telegeam",
-        "Php"
-    ],
-    "success_url": "/",
-    "env": {
-        "TG_BOT_TOKEN": {
-            "description": "your Telegram Bot Token, from @BotFather"
-        },
-},
-    "formation": {
-        "web": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "image": "heroku/php"
+  "name": "Telegram-bot",
+  "description": "A simple PHP powered Telegram Bot.",
+  "repository": "https://github.com/Benchamxd/Bin-Checker",
+  "keywords": ["PHP", "Telegram", "bot"]
 }
