@@ -10,6 +10,7 @@ set_time_limit(0);
 
 flush();
 ##------------------------------##
+$API_KEY = $_ENV["BOT_TOKEN"]; // bot token
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
