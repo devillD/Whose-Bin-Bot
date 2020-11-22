@@ -1,4 +1,4 @@
-# Bin-Checker-Bot
+# Bin-Checker-Bot (https://github.com/Benchamxd/Bin-Checker)
 
 
 ## HOW TO DEPLOY?
@@ -18,4 +18,4 @@
 For any type of help on deploy. Contact me here [INDUS CHATS](https://t.me/induschats).
 
 
-# [DO GIVE A STAR TO MY PROJECT AND SUPPORT IT](https://github.com/Benchamxd/Bin-Checker/star)
+# DO GIVE A STAR TO MY PROJECT AND SUPPORT IT (https://github.com/Benchamxd/Bin-Checker)
