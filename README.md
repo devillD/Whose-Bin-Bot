@@ -18,4 +18,4 @@
 For any type of help on deploy. Contact me here [INDUS CHATS](https://t.me/induschats).
 
 
-**DO GIVE A STAR TO MY PROJECT AND SUPPORT IT**
+## DO GIVE A STAR TO MY PROJECT AND SUPPORT IT
