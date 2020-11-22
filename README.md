@@ -1,4 +1,5 @@
-# Bin-Checker
+# Bin-Checker-Bot
+
 
 ## HOW TO DEPLOY?
 
@@ -12,5 +13,9 @@
 
 **AFTER THIS REMOVE YOUR BOT TOKEN FROM THE REPO FOR YOUR SAFTEY**
 
-## HELP
+## HELP ME
+
 For any type of help on deploy. Contact me here [INDUS CHATS](https://t.me/induschats).
+
+
+**DO GIVE A STAR TO MY PROJECT AND SUPPORT IT**
