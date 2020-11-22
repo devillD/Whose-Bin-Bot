@@ -1,0 +1,6 @@
+{
+  "name": "Bin-Checker",
+  "description": "A simple PHP powered Telegram Bot.",
+  "repository": "https://github.com/Benchamxd/Bin-Checker",
+  "keywords": ["PHP", "Telegram", "bot"]
+}
