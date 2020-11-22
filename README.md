@@ -1,4 +1,5 @@
 # Bin-Checker
 
-## Heroku Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+##HOW TO DEPLOY?
+
+FORK THE REPO FROM [HERE](https://github.com/Benchamxd/Bin-Checker/fork)
