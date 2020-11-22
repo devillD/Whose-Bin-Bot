@@ -47,11 +47,11 @@ $chatid = $update->callback_query->message->chat->id;
 if($text == '/start')
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"Welcome to bin checker
+                'text' =>"***Welcome to bin checker
 
-Use /bin xxxxx to check the bin.
+Use***`/bin xxxxx to` ***check the bin.
 
-You can also make a bot like this from here:- https://github.com/BenchamXd/Bin-Checker"
+You can also make a bot like this from here:- https://github.com/BenchamXd/Bin-Checker***"
 ]);
 if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
