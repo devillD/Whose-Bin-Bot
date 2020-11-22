@@ -10,12 +10,12 @@ The repository in which you add the bot token must be a private one. Adding the 
 2. Get any terminal application, [GitBash](https://git-scm.com/) if on pc, [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_IN&gl=US) if on Android.
 3. Create an empty repository by clicking [here](https://github.com/new). REMEMBER TO KEEP IT **PRIVATE** AND **NOT PUBLIC.** Lets say, your github username is user123, then, the repo would be like user123/Bin-Checker.
 4. Now open GitBash/Termux and give the following commands.
-`git clone --bare https://github.com/Benchamxd/Bin-Checker.git`
-`cd Bin-Checker.git`
-`git push --mirror https://github.com/user123/Bin-Checker.git` (edit it to your repo link)
+✘ `git clone --bare https://github.com/Benchamxd/Bin-Checker.git`
+✘ `cd Bin-Checker.git`
+✘ `git push --mirror https://github.com/user123/Bin-Checker.git` (edit it to your repo link)
 5. Now, to delete the temporary clone that you just did,
-`cd ..`
-`rm -rf Benchamxd/Bin-Checker.git`
+✘ `cd ..`
+✘ `rm -rf Benchamxd/Bin-Checker.git`
 6. Now proceed to [Adding the Bot Token](https://github.com/Benchamxd/Bin-Checker#adding-bot-token)
 
 ## Adding bot token
