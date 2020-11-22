@@ -49,7 +49,7 @@ bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"***Welcome to bin checker
 
-Use*** `/bin xxxxx to` ***check the bin.
+Use*** `/bin xxxxx` ***to check the bin.
 
 You can also make a bot like this from here:- https://github.com/BenchamXd/Bin-Checker***",
 'parse_mode'=>"MarkDown",
