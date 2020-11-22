@@ -1,5 +1,6 @@
-# Bin-Checker-Bot 
+# Bin-Checker-Bot
 
+A simple php telegram bot to check if the bin is valid or not
 
 ## HOW TO DEPLOY?
 
