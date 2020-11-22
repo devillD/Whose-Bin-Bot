@@ -51,7 +51,8 @@ bot('sendmessage', [
 
 Use***`/bin xxxxx to` ***check the bin.
 
-You can also make a bot like this from here:- https://github.com/BenchamXd/Bin-Checker***"
+You can also make a bot like this from here:- https://github.com/BenchamXd/Bin-Checker***",
+'parse_mode'=>"MarkDown",
 ]);
 if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
