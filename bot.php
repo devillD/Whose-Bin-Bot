@@ -10,7 +10,7 @@ set_time_limit(0);
 
 flush();
 
-$API_KEY = 'your bot token'
+$API_KEY = $_ENV["BOT_TOKEN"]; // bot token
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
@@ -44,20 +44,17 @@ $from_id = $message->from->id;
 $text = $message->text;
 $fromid = $update->callback_query->from->id;
 $username = $update->message->from->username;
+$START_MESSAGE = $_ENV["START_MESSAGE"]; // bot token
 $chatid = $update->callback_query->message->chat->id;
+
 if($text == '/start')
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"***Welcome to bin checker
-
-Use*** `/bin xxxxx` ***to check the bin.
-
-You can also make a bot like this from here:- https://github.com/BenchamXd/Bin-Checker***",
+                'text' =>"$START_MESSAGE",
 'parse_mode'=>"MarkDown",
 ]);
 if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
-
 $data = json_decode(file_get_contents("https://lookup.binlist.net/$bin"),true);
 $bank = $data['bank']['name'];
 $country = $data['country']['alpha2'];
