@@ -1,6 +1,27 @@
 {
-  "name": "Telegram-bot",
-  "description": "A simple PHP powered Telegram Bot.",
-  "repository": "https://github.com/Benchamxd/Bin-Checker",
-  "keywords": ["PHP", "Telegram", "bot"]
+    "name": "Bin-Checker Bot",
+    "description": "A simple bot to check if the bin is valid or not.",
+    "keywords": [
+        "Bin",
+        "Bot",
+        "Telegra."
+    ],
+    "website": "#TODO",
+    "repository": "https://github.com/Benchamxd/Bin-Checker",
+    "success_url": "/",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "your Telegram Bot Token, from @BotFather"
+        },
+        "START_MESSAGE": {
+            "description": "A start message for your bot."
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "image": "heroku/php"
 }
