@@ -6,7 +6,7 @@ error_reporting(0);
 set_time_limit(0);
 
 flush();
-$API_KEY = $_ENV['API_KEY']; //Your token
+$API_KEY = $_ENV['BOT_TOKEN']; //Your token
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
