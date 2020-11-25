@@ -1,16 +1,12 @@
 <?php
-/*
-BY:- @BenchamXD
-
-CHANNEL:- @IndusBots
-*/
+////////BENCHAMIN LOUIS//////
+//CHANNEL:- T.ME/INDUSBOTS////
 error_reporting(0);
 
 set_time_limit(0);
 
 flush();
-
-$API_KEY = $_ENV["BOT_TOKEN"]; // bot token
+$API_KEY = $_ENV['API_KEY']; //Your token
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
@@ -33,7 +29,12 @@ function bot($method,$datas=[]){
 	'parse_mode'=>$mode
 	]);
 	}
-	
+	function sendaction($chat_id, $action){
+	bot('sendchataction',[
+	'chat_id'=>$chat_id,
+	'action'=>$action
+	]);
+	}
 //==============BENCHAM======================//
 $update = json_decode(file_get_contents('php://input'));
 $message = $update->message;
@@ -44,45 +45,51 @@ $from_id = $message->from->id;
 $text = $message->text;
 $fromid = $update->callback_query->from->id;
 $username = $update->message->from->username;
-$START_MESSAGE = $_ENV["START_MESSAGE"]; // bot token
 $chatid = $update->callback_query->message->chat->id;
+$callback_query = $update->callback_query->data;
+$messageid = $update->callback_query->message->message_id;
+$reply = $update->message->reply_to_message->message_id;
+$START_MESSAGE = $_ENV['START_MESSAGE'];
+//===============BENCHAM=============//
+if ($text == "/start") {
 
-if($text == '/start')
-bot('sendmessage', [
+            bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"$START_MESSAGE",
-'parse_mode'=>"MarkDown",
-]);
-if(strpos($text,"/bin") !== false){ 
+                'text' =>"***$START_MESSAGE
+
+Use*** `/bin xxxxx` ***to check bin on bin-su.***",
+ 'parse_mode'=>'MarkDown',
+            
+        ]);
+ }if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
-$data = json_decode(file_get_contents("https://lookup.binlist.net/$bin"),true);
-$bank = $data['bank']['name'];
-$country = $data['country']['alpha2'];
-$currency = $data['country']['currency'];
-$emoji = $data['country']['emoji'];
-$scheme = $data['scheme'];
-$Brand = $data['brand'];
-$type = $data['type'];
- if($data['scheme']){
+
+$data = json_decode(file_get_contents("https://bins-su-api.now.sh/api/$bin"),true);
+$bank = $data['data']['bin'];
+$vendor =  $data['data']['vendor'];
+$type =  $data['data']['type'];
+$level =  $data['data']['level'];
+$bank =  $data['data']['bank'];
+$country =  $data['data']['country'];
+
+ if($data['data']){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"***VALID BIN✅
-                
-Bin: $bin
+               
+➤ Bɪɴ : $bin
 
-Type: $scheme
+➤ Tʏᴘᴇ : $type
 
-Brand : $Brand
+➤ Bʀᴀɴᴅ : $vendor
 
-Bank: $bank
+➤ Bᴀɴᴋ : $bank
 
-Country: $country $emoji
+➤ Cᴏᴜɴᴛʀʏ : $country
 
-Currency: $currency
+➤ Cʀᴇᴅɪᴛ/Dᴇʙɪᴛ : $type
 
-Credit/Debit:$type
-
-Checked By @$username***",
+🔺BIN CHECKED FROM DATABASE OF BIN-SU🔻***",
 'parse_mode'=>"MarkDown",
 ]);
     }
@@ -94,8 +101,5 @@ bot('sendmessage', [
 ]);
 }
 }
-/*
-BY:- @BenchamXD
 
-CHANNEL:- @IndusBots
-*/
+?>
