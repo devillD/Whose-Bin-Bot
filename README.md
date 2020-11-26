@@ -1,3 +1,7 @@
+# Working bot
+
+[Bin Checker](http://t.me/binchkrobot)
+
 # Bin-Checker-Bot
 
 A simple Telegram bot, in PHP, to check if the bin is valid or not.
