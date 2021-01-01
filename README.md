@@ -30,6 +30,9 @@ AFTER DEPLOY DO SET WEBHOOK BY ``api.telegram.org/bot<your bot token>/setwebhook
 For any type of help on deploy. Contact us on [INDUS CHATS](https://t.me/induschats).
 
 
-##
+## Modified by
+
+[Who](https://t.me/unkusr)
+
 
 **DO GIVE A STAR TO MY PROJECT TO SHOW YOUR SUPPORT!!**
