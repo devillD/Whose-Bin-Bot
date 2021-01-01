@@ -57,7 +57,7 @@ if ($text == "/start") {
                 'chat_id' =>$chat_id,
                 'text' =>"***$START_MESSAGE
 
-Use*** `/bin xxxxx` ***to check bin on bin-su.***",
+Use*** `/bin <First 6 digit of the bin>` ***Support: paypal.me/abirxo***",
  'parse_mode'=>'MarkDown',
             
         ]);
