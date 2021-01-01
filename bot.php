@@ -64,20 +64,21 @@ Use*** `/bin xxxxx` ***to check bin on bin-su.***",
  }if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
 
-$data = json_decode(file_get_contents("https://bin-checker.net/api/$bin"),true);
+$data = json_decode(file_get_contents("https://bins-su-api.now.sh/api/$bin"),true);
 $bank = $data['data']['bin'];
 $vendor =  $data['data']['vendor'];
 $type =  $data['data']['type'];
 $level =  $data['data']['level'];
 $bank =  $data['data']['bank'];
 $country =  $data['data']['country'];
- 
-if($data['data']){
+
+ if($data['data']){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"***VALID BIN✅
-               
+                'text' =>"***
 ➤ Bin : $bin
+
+➤ Level : $level
 
 ➤ Type : $type
 
@@ -86,18 +87,14 @@ bot('sendmessage', [
 ➤ Bank : $bank
 
 ➤ Country : $country
-
-➤ Credit/Debit : $type
-
-
-🔺BIN CHECKED FROM DATABASE OF BIN-SU🔻***",
+***",
 'parse_mode'=>"MarkDown",
 ]);
     }
 else {
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"INVALID BIN❌",
+                'text' =>"INVALID BIN! Try once again :)",
                
 ]);
 }
