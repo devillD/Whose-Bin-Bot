@@ -70,11 +70,7 @@ $vendor =  $data['data']['vendor'];
 $type =  $data['data']['type'];
 $level =  $data['data']['level'];
 $bank =  $data['data']['bank'];
-$name = $data['data']['name'];
-$website = $data['data']['website'];
-$phone = $data['data']['phone'];
 $country =  $data['data']['country'];
-$code = $data['data']['code'];
  
 if($data['data']){
 bot('sendmessage', [
@@ -95,7 +91,8 @@ bot('sendmessage', [
 
 ➤ Credit/Debit : $type
 
-***",
+
+🔺BIN CHECKED FROM DATABASE OF BIN-SU🔻***",
 'parse_mode'=>"MarkDown",
 ]);
     }
