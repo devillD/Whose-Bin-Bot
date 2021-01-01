@@ -1,6 +1,6 @@
 # Working bot
 
-[Bin Checker](http://t.me/binchkrobot)
+[Bin Checker](http://t.me/whosebin_bot)
 
 # Bin-Checker-Bot
 
