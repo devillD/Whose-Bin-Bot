@@ -91,15 +91,7 @@ bot('sendmessage', [
 
 ➤ Bank : $bank
 
-➤ Name : $name
-
-➤ Bank Website : $website
-
-➤ Phone : $phone
-
 ➤ Country : $country
-
-➤ Country Code : $code
 
 ➤ Credit/Debit : $type
 
