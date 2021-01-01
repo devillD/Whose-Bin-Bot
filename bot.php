@@ -79,8 +79,6 @@ bot('sendmessage', [
                
 ➤ Bin : $bin
 
-➤ Level : $level
-
 ➤ Type : $type
 
 ➤ Brand : $vendor
