@@ -64,32 +64,46 @@ Use*** `/bin xxxxx` ***to check bin on bin-su.***",
  }if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
 
-$data = json_decode(file_get_contents("https://bins-su-api.now.sh/api/$bin"),true);
+$data = json_decode(file_get_contents("https://bin-checker.net/api/$bin"),true);
 $bank = $data['data']['bin'];
 $vendor =  $data['data']['vendor'];
 $type =  $data['data']['type'];
 $level =  $data['data']['level'];
 $bank =  $data['data']['bank'];
+$name = $data['data']['name'];
+$website = $data['data']['website'];
+$phone = $data['data']['phone'];
 $country =  $data['data']['country'];
-
- if($data['data']){
+$code = $data['data']['code'];
+ 
+if($data['data']){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"***VALID BIN✅
                
-➤ Bɪɴ : $bin
+➤ Bin : $bin
 
-➤ Tʏᴘᴇ : $type
+➤ Level : $level
 
-➤ Bʀᴀɴᴅ : $vendor
+➤ Type : $type
 
-➤ Bᴀɴᴋ : $bank
+➤ Brand : $vendor
 
-➤ Cᴏᴜɴᴛʀʏ : $country
+➤ Bank : $bank
 
-➤ Cʀᴇᴅɪᴛ/Dᴇʙɪᴛ : $type
+➤ Name : $name
 
-🔺BIN CHECKED FROM DATABASE OF BIN-SU🔻***",
+➤ Bank Website : $website
+
+➤ Phone : $phone
+
+➤ Country : $country
+
+➤ Country Code : $code
+
+➤ Credit/Debit : $type
+
+***",
 'parse_mode'=>"MarkDown",
 ]);
     }
