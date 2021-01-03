@@ -76,17 +76,20 @@ $country =  $data['data']['country'];
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"***
-➤ Bin : $bin
+➲ Bin : $bin
 
-➤ Level : $level
+➲ Level : $level
 
-➤ Type : $type
+➲ Type : $type
 
-➤ Brand : $vendor
+➲ Brand : $vendor
 
-➤ Bank : $bank
+➲ Bank : $bank
 
-➤ Country : $country
+➲ Country : $country
+
+Bot by @unkusr
+
 ***",
 'parse_mode'=>"MarkDown",
 ]);
