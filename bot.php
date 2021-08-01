@@ -64,7 +64,7 @@ Use*** `/bin <First 6 digit of the bin>` ***Support: paypal.me/abirxo***",
  }if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
 
-$data = json_decode(file_get_contents("https://bin.xwowx.repl.co/api/$bin"),true);
+$data = json_decode(file_get_contents("https://binssuapi.vercel.app/api/$bin"),true);
 $bank = $data['data']['bin'];
 $vendor =  $data['data']['vendor'];
 $type =  $data['data']['type'];
