@@ -1,6 +1,4 @@
 <?php
-////////BENCHAMIN LOUIS//////
-//CHANNEL:- T.ME/INDUSBOTS////
 error_reporting(0);
 
 set_time_limit(0);
@@ -64,29 +62,26 @@ Use*** `/bin <First 6 digit of the bin>` ***Support: paypal.me/abirxo***",
  }if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
 
-$data = json_decode(file_get_contents("https://bins-su-api.vercel.app/api/$bin"),true);
-$bank = $data['data']['bin'];
-$vendor =  $data['data']['vendor'];
-$type =  $data['data']['type'];
-$level =  $data['data']['level'];
-$bank =  $data['data']['bank'];
-$country =  $data['data']['country'];
+$data = json_decode(file_get_contents("https://lookup.binlist.net/$bin"),true);
+$ctype = $data['data']['scheme'];
+$brand = $data['data']['brand'];
+$prepaid = $data['data']['prepaid'];
+$country = $data['country']['name'];
+$flag = $data['country']['emoji'];
+$money = $data['data']['currency'];
+$bank = $data['bank']['name'];
 
  if($data['data']){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"***
 ➲ Bin : $bin
-
-➲ Level : $level
-
-➲ Type : $type
-
-➲ Brand : $vendor
-
+➲ Card Type : $ctype
+➲ Brand : $brand
+➲ prepaid : $prepaid
 ➲ Bank : $bank
-
-➲ Country : $country
+➲ Country : $country $flag
+-> Currency : $money
 
 Bot by @unkusr
 
