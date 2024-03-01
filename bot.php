@@ -57,20 +57,20 @@ if ($text == "/start") {
                 'chat_id' =>$chat_id,
                 'text' =>"***$START_MESSAGE
 
-Use*** `/bin <First 6 digit of the bin>` ***Support: paypal.me/abirxo***",
+Use*** `/bin <First 6 digit of the bin>` ***Support: ko-fi.com/devillD***",
  'parse_mode'=>'MarkDown',
             
         ]);
  }if(strpos($text,"/bin") !== false){ 
 $bin = trim(str_replace("/bin","",$text)); 
 
-$data = json_decode(file_get_contents("https://bins-su-api.vercel.app/api/$bin"),true);
-$bank = $data['data']['bin'];
-$vendor =  $data['data']['vendor'];
-$type =  $data['data']['type'];
-$level =  $data['data']['level'];
-$bank =  $data['data']['bank'];
-$country =  $data['data']['country'];
+$data = json_decode(file_get_contents("https://api.api-zero.workers.dev/bin/$bin"),true);
+$bank = $data['data']['BIN/IIN'];
+$vendor =  $data['data']['Card Brand'];
+$type =  $data['data']['Card Type'];
+$level =  $data['data']['Card Level'];
+$bank =  $data['data']['Issuer Name / Bank'];
+$country =  $data['data']['ISO Country Name'];
 
  if($data['data']){
 bot('sendmessage', [
